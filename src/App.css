@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Times New Roman', sans-serif;
+
+  --color: var(#4395ff);
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+p::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+input {
+  display: flex;
+  flex: 1;
+  border-radius: 100%;
+  width: 20vw;
+  height: 25vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+input::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+input::-moz-color-swatch {
+  border-radius: 50%;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
